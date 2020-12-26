@@ -1,17 +1,848 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
-    <title>Repository</title>
+    <title>Sport bolalar</title>
+
 </head>
+
 <body>
-    <div class="container">
-        <h1>Hello world</h1>
+
+    <div class="modal">
+
+        <div class="modal-inner ">
+            <h4 class="modal-inner__top">
+                Kirish
+            </h4>
+
+            <form class="modal-inner__form" action="">
+
+                <div class="input">
+                    <label class="fr" for="phone-number">
+                        Elektron manzilingiz
+                        <input placeholder="+998 __ ___ __ __" id="phone-number" type="tel">
+                    </label>
+                </div>
+
+                <div class="input-last">
+                    <label for="password" class="sc">
+                        Parolingiz
+                        <input id="password" type="password" placeholder="Parolni kiriting">
+                    </label>
+                </div>
+
+                <button class="btn" type="submit">
+                    Kirish
+                </button>
+
+                <div class="form-bottom">
+                    <a class="dont-forget" href="#">Eslab qolish</a>
+
+                    <a class="remember" href="#">Parolni unutdingizmi ?</a>
+                </div>
+            </form>
+
+            <div class="modal-inner__bottom">
+                <div class="else">
+                    <span class="line"></span>
+                    <h5 class="bottom-title">
+                        Yoki
+                    </h5>
+                    <span class="line"></span>
+                </div>
+
+                <div class="btm-link">
+                    <a class="bottom-link" href="#">Ro‘yxatdan o‘tish</a>
+
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+    <div class="overlay-modal"></div>
+
+    <header class="header">
+        <div class="header-inner container">
+            <a href="#" class="header-inner__left">
+                <img src="./images/icon/logo.svg" alt="" class="logo-holder">
+
+                <h3 class="logo-name">
+                    Sport Bolalar
+                    Nigohida
+                </h3>
+            </a>
+
+            <div class="header-inner__middle">
+                <a href="#" class="middle-links first">O‘yinlar</a>
+                <a href="#" class="middle-links">Infografika</a>
+                <a href="#" class="middle-links">Ota-onalar uchun</a>
+                <a href="#" class="middle-links">To‘garaklar</a>
+                <a href="#" class="middle-links">Videoblog</a>
+                <a href="#" class="middle-links">Reyting</a>
+            </div>
+
+            <div class="header-inner__right">
+
+                <div class="gamburg-menu">
+                    <span class="gamburg-icon"></span>
+                    <span class="gamburg-icon"></span>
+                    <span class="gamburg-icon"></span>
+                </div>
+                <a href="#" class="right-links lan">O‘zb</a>
+                <a href="javascript:void(0)" id="modal-opener">Kabinet</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="section-inner container">
+
+            <div class="section-inner__left">
+                <h1 class="section-title">
+                    Sport Bolalar Nigohida
+                    portalida yangi o‘yinimizni qarshi oling!
+                </h1>
+
+                <a href="#" class="section-link">O‘yinga o‘tish</a>
+                <a href="#" class="section-link second">Batafsil</a>
+
+            </div>
+
+
+            <img src="./images/icon/section-img.png" alt="" class="section-inner__img">
+
+            <div class="carusel-section">
+                <span class="carusel-item first"></span>
+                <span class="carusel-item"></span>
+                <span class="carusel-item third"></span>
+                <span class="carusel-item"></span>
+                <span class="carusel-item first"></span>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="family">
+        <div class="family-inner container-xl">
+            <div class="family-inner__left">
+                <h2 class="family-title">
+                    Ota-onalar sahifasi
+                </h2>
+
+                <p class="family-text">
+                    Ushbu sahifa ota-onalarni bolalar sporti dunyosi bilan tanishtiradi
+                </p>
+
+                <a href="#" class="family-link">
+                    Sahifaga o‘tish
+                </a>
+            </div>
+
+            <div class="family-inner__right">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="video">
+        <div class="video-inner container">
+        <div class="flex-rew">
+         <a href="#" class="sm-blogg">
+                <div class="small-blog">
+                    <div class="overlay"></div>
+                    <img src="./images/small-blog1.png" alt="" class="small-blog-img">
+                    <img src="./images/icon/play-video.svg" alt="" class="blog-arrow">
+
+                    <div class="sm-blog--top">
+                        <span class="date">
+                            10/11/2017
+                        </span>
+
+                        <p class="type">
+                            Futbol
+                        </p>
+                    </div>
+
+                    <h3 class="small-blog--text">
+                        O‘smirlar o‘rtasida futbol chempionati o‘tkazildi
+                    </h3>
+                </div>
+            </a>
+
+            <a href="#" class="sm-blogg">
+                <div class="small-blog first">
+                    <div class="overlay"></div>
+                    <img src="./images/small-blog2.png" alt="" class="small-blog-img">
+                    <img src="./images/icon/play-video.svg" alt="" class="blog-arrow">
+
+                    <div class="sm-blog--top">
+                        <span class="date">
+                            10/11/2017
+                        </span>
+
+                        <p class="type">
+                            Kuch sinashish
+                        </p>
+                    </div>
+
+                    <h3 class="small-blog--text">
+                        Kuch sinashish bo‘yicha qaysi jamoa g‘olib bo‘ldi...
+                    </h3>
+                </div>
+            </a>
+
+            <div class="sm-blog__right first">
+                <h3 class="blog-right-title">
+                    Videoblog
+                </h3>
+
+                <p class="blog-right-text">
+                    Bolalar sportiga tegishli videolavhalar ushbu blogdan joy olgan.
+                </p>
+
+                <a href="#" class="blog-right-link">
+                    Barcha videolar
+                </a>
+            </div>
+        </div>
+        
+        <a href="#" class="sm-blogg">
+            <div class="small-blog">
+                <div class="overlay"></div>
+                <img src="./images/small-blog3.png" alt="" class="small-blog-img">
+                <img src="./images/icon/play-video.svg" alt="" class="blog-arrow">
+
+                <div class="sm-blog--top">
+                    <span class="date">
+                        10/11/2017
+                    </span>
+
+                    <p class="type">
+                        Chempionat
+                    </p>
+                </div>
+
+                <h3 class="small-blog--text">
+                    O‘smirlar o‘rtasida futbol chempionati o‘tkazildi
+                </h3>
+            </div>
+        </a>
+
+
+        <a href="#" class="sm-blogg huge">
+            <div class="small-blog huge">
+                <div class="overlay huge"></div>
+                <img src="./images/large-blog1.png" alt="" class="small-blog-img huge">
+                <img src="./images/icon/play-video.svg" alt="" class="blog-arrow">
+
+                <div class="sm-blog--top">
+                    <span class="date huge">
+                        10/11/2017
+                    </span>
+
+                    <p class="type huge">
+                        Rasmiy
+                    </p>
+                </div>
+
+                <h3 class="small-blog--text huge">
+                    Yurtboshimizning sportni rivojlantirish bo‘yicha navbatdagi yig‘ilishi
+                </h3>
+            </div>
+        </a>
+
+        <a href="#" class="sm-blogg">
+            <div class="small-blog last">
+                <div class="overlay"></div>
+                <img src="./images/small-blog4.png" alt="" class="small-blog-img">
+                <img src="./images/icon/play-video.svg" alt="" class="blog-arrow">
+
+                <div class="sm-blog--top">
+                    <span class="date">
+                        10/11/2017
+                    </span>
+
+                    <p class="type">
+                        Ommaviy
+                    </p>
+                </div>
+
+                <h3 class="small-blog--text">
+                    Kuch sinashish bo‘yicha qaysi jamoa g‘olib bo‘ldi...
+                </h3>
+            </div>
+        </a>
+
+    </div>
+
+
+    <div class="game">
+        <div class="game-inner container-xl">
+            <h2 class="game-inner__title">
+                O'yinlar
+            </h2>
+
+            <div class="game-blog">
+                <div class="gm-blog">
+                    <h4 class="gm-blog__text">
+                        O'ylab toping
+                    </h4>
+                </div>
+
+                <div class="gm-blog">
+                    <!-- <h4 class="gm-blog__text second">
+                            Ha yoki Yo'q
+                        </h4> -->
+                </div>
+
+                <div class="gm-blog">
+                    <h4 class="gm-blog__text third">
+                        Sport testi
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="carusel-items">
+            <span class="carusel-second"></span>
+            <span class="carusel-third"></span>
+            <span class="carusel-second"></span>
+        </div>
+    </div>
+
+    <div class="advice">
+        <div class="advice-inner">
+            <h2 class="advice-title">
+                Sport maslahatlari
+            </h2>
+
+            <p class="advice-text">
+                O‘zingizga qiziq bo’lgan sportga taaluqli barcha ma’lumotlarga ega bo‘ling.
+            </p>
+
+            <div class="advice-boxes">
+                <div class="box fr">
+                    <h4 class="box-title">
+                        Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang
+                    </h4>
+
+                    <p class="box-text">
+                        Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya bilan
+                        shug‘ullanishni kanda qilmang badantarbiya
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h4 class="box-title">
+                        Mashq qilayotganingizda albatta yengil mashqlardan boshlang
+                    </h4>
+
+                    <p class="box-text">
+                        Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya bilan
+                        shug‘ullanishni kanda qilmang badantarbiya
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h4 class="box-title">
+                        Imkon qadar uy sharoitida tosh ko‘tarishdan yiroqroq bo‘ling
+                    </h4>
+
+                    <p class="box-text">
+                        Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya bilan
+                        shug‘ullanishni kanda qilmang badantarbiya
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h4 class="box-title">
+                        Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang
+                    </h4>
+
+                    <p class="box-text">
+                        Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya bilan
+                        shug‘ullanishni kanda qilmang badantarbiya
+                    </p>
+                </div>
+
+                <div class="box">
+                    <h4 class="box-title">
+                        Mashq qilayotganingizda albatta yengil mashqlardan boshlang
+                    </h4>
+
+                    <p class="box-text">
+                        Ertalabdan badantarbiya bilan shug‘ullanishni kanda qilmang badantarbiya badantarbiya bilan
+                        shug‘ullanishni kanda qilmang badantarbiya
+                    </p>
+                </div>
+            </div>
+
+            <div class="carusel-section">
+                <span class="carusel-item first"></span>
+                <span class="carusel-item"></span>
+                <span class="carusel-item third"></span>
+                <span class="carusel-item"></span>
+                <span class="carusel-item first"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sport">
+        <div class="sport-inner container">
+            <div class="sport-inner__left">
+                <img class="sp-left-img" src="./images/boy.png" alt="">
+            </div>
+
+            <div class="sport-inner__right">
+                <div class="sp-right-top">
+                    <h4 class="right-title">
+                        Hududingizdagi
+                        sport inshootlari
+                    </h4>
+
+                    <a class="right-link" href="#">Toshkent shahri</a>
+                </div>
+
+                <div class="sp-right-main">
+                    <h5 class="main-group">
+                        Futbol maydonlari
+                    </h5>
+
+                    <h5 class="main-group">
+                        Tennis
+                        kortlari
+
+                    </h5>
+
+                    <h5 class="main-group">
+                        Suzish
+                        havzalari
+
+                    </h5>
+
+                    <h5 class="main-group">
+                        Gimnastika
+                        komplekslari
+                    </h5>
+
+                    <h5 class="main-group">
+                        Yugurish
+                        maydonlari
+                    </h5>
+
+                    <h5 class="main-group">
+                        Boshqa
+                    </h5>
+                </div>
+
+                <div class="sp-right-bottom">
+                    <div class="bottom-left">
+                        <span class="number">
+                            27
+                        </span>
+
+                        <div class="left-second">
+                            <h6 class="number-text">
+                                ta
+                            </h6>
+
+                            <p class="number-type">
+                                Suzish havzalari mavjud
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="bottom-right">
+                        Batafsil ko'rish
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="record">
+        <div class="record-inner container">
+            <img src="./images/record-img.png" alt="" class="record-inner__left">
+
+            <div class="record-inner__right">
+
+                <div class="right-heading">
+                    <h2 class="right-heading__title">
+                        Top-3 foydalanuvchi
+                    </h2>
+
+                    <a href="#" class="right-heading__link">
+                        Reytingni ko‘rish
+                    </a>
+                </div>
+
+                <div class="record-blog">
+                    <img class="rc-img" src="./images/user1.png" alt="">
+
+                    <div class="rc-group">
+                        <h4 class="rc-name">
+                            Mirzakhalilova Madina
+                        </h4>
+
+                        <p class="rc-type">
+                            sport lug‘ati
+                        </p>
+                    </div>
+
+                    <h2 class="rc-numbers">
+                        2,365
+                    </h2>
+
+                    <h2 class="rc-numbers last">
+                        2,365
+                    </h2>
+
+                    <img class="medals" src="./images/icon/medal1.svg" alt="">
+                </div>
+
+
+                <div class="record-blog second">
+                    <img class="rc-img" src="./images/user2.png" alt="">
+
+                    <div class="rc-group">
+                        <h4 class="rc-name">
+                            Abdullayev Abdubakir
+                        </h4>
+
+                        <p class="rc-type">
+                            futbol
+                        </p>
+                    </div>
+
+                    <h2 class="rc-numbers">
+                        1,965
+                    </h2>
+
+                    <h2 class="rc-numbers last">
+                        2,263
+                    </h2>
+
+                    <img class="medals" src="./images/icon/medal2.svg" alt="">
+                </div>
+
+
+                <div class="record-blog third">
+                    <img class="rc-img" src="./images/user3.png" alt="">
+
+                    <div class="rc-group">
+                        <h4 class="rc-name">
+                            Ubaydullayev Odiljon
+                        </h4>
+
+                        <p class="rc-type">
+                            ha yoki yo
+                        </p>
+                    </div>
+
+                    <h2 class="rc-numbers">
+                        1,022
+                    </h2>
+
+                    <h2 class="rc-numbers last">
+                        2,001
+                    </h2>
+
+                    <img class="medals" src="./images/icon/medal3.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="legioner">
+        <div class="legioner-inner">
+
+            <div class="legioner-inner__heading container">
+                <h1 class="inner-title">
+                    Mashhur sportchilar
+                </h1>
+
+                <a class="inner-link" href="#">Barcha sportchilar</a>
+            </div>
+
+            <div class="legioner-inner__images">
+                <div class="sp-blog">
+                    <img class="sportsmen last" src="./images/sportsmen1.png" alt="">
+
+                    <h2 class="sp-name fr">
+                        Bektemir Melqo‘ziyev
+                    </h2>
+
+                    <p class="sp-job fr">
+                        Boks - Rio de Janeiro - 2004 oltin
+                    </p>
+
+                </div>
+
+                <div class="sp-blog">
+                    <img class="sportsmen last" src="./images/sportsmen2.png" alt="">
+
+                    <h2 class="sp-name">
+                        Ruslan Nuriddinov
+                    </h2>
+
+                    <p class="sp-job">
+                        Og‘ir atletika - Rio de Janeiro - 2016 oltin
+                    </p>
+
+                </div>
+
+                <div class="sp-blog">
+                    <img class="sportsmen" src="./images/sportsmen3.png" alt="">
+
+                    <h2 class="sp-name">
+                        ARTUR TAYMAZOV
+                    </h2>
+
+                    <p class="sp-job">
+                        Erkin kurash - Afina - 2004 oltin
+                    </p>
+
+                </div>
+
+                <div class="sp-blog last">
+                    <img class="sportsmen" src="./images/sportsmen4.png" alt="">
+
+                    <h2 class="sp-name">
+                        Fazliddin G‘oyibnazarov
+                    </h2>
+
+                    <p class="sp-job">
+                        Boks - Lillehammer - 2000 oltin
+                    </p>
+
+                </div>
+
+                <div class="sp-blog">
+                    <img class="sportsmen last" src="./images/sportsmen5.png" alt="">
+
+                    <h2 class="sp-name ls">
+                        Bektemir Melqo‘ziyev
+                    </h2>
+
+                    <p class="sp-job ls">
+                        Erkin kurash - Afina - 2004 oltin
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="service-inner container-xl">
+            <h2 class="service-inner__left">
+                BIZNI IJTIMOIY TARMOQLARDA HAM
+                KUZATING VA OBUNA BO‘LING
+            </h2>
+
+            <div class="service-inner__right">
+                <a href="#">
+                    <svg class="social-media" width="88" height="88" viewBox="0 0 88 88" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                            <rect x="20" y="10" width="48" height="48" rx="24" fill="white" />
+                            <path
+                                d="M56 26.3085C55.1075 26.7 54.1565 26.9595 53.165 27.0855C54.185 26.4765 54.9635 25.5195 55.3295 24.366C54.3785 24.933 53.3285 25.3335 52.2095 25.557C51.3065 24.5955 50.0195 24 48.6155 24C45.8915 24 43.6985 26.211 43.6985 28.9215C43.6985 29.3115 43.7315 29.6865 43.8125 30.0435C39.722 29.844 36.1025 27.8835 33.671 24.897C33.2465 25.6335 32.9975 26.4765 32.9975 27.384C32.9975 29.088 33.875 30.5985 35.183 31.473C34.3925 31.458 33.617 31.2285 32.96 30.867C32.96 30.882 32.96 30.9015 32.96 30.921C32.96 33.312 34.6655 35.298 36.902 35.7555C36.5015 35.865 36.065 35.9175 35.612 35.9175C35.297 35.9175 34.979 35.8995 34.6805 35.8335C35.318 37.782 37.127 39.2145 39.278 39.261C37.604 40.5705 35.4785 41.3595 33.1775 41.3595C32.774 41.3595 32.387 41.3415 32 41.292C34.1795 42.6975 36.7625 43.5 39.548 43.5C48.602 43.5 53.552 36 53.552 29.499C53.552 29.2815 53.5445 29.0715 53.534 28.863C54.5105 28.17 55.331 27.3045 56 26.3085Z" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="10" />
+                                <feGaussianBlur stdDeviation="10" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg class="social-media" width="88" height="88" viewBox="0 0 88 88" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                            <rect x="20" y="10" width="48" height="48" rx="24" fill="white" />
+                            <path
+                                d="M50 30.25H45.5V27.25C45.5 26.422 46.172 25.75 47 25.75H48.5V22H45.5C43.0145 22 41 24.0145 41 26.5V30.25H38V34H41V46H45.5V34H48.5L50 30.25Z" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="10" />
+                                <feGaussianBlur stdDeviation="10" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </a>
+
+
+                <a href="#">
+                    <svg class="social-media" width="88" height="88" viewBox="0 0 88 88"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                            <rect x="20" y="10" width="48" height="48" rx="24" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M50.384 43.7791C50.706 44.0071 51.121 44.0641 51.491 43.9241C51.861 43.7831 52.133 43.4671 52.215 43.0841C53.084 39.0001 55.192 28.6631 55.983 24.9481C56.043 24.6681 55.943 24.3771 55.723 24.1901C55.503 24.0031 55.198 23.9491 54.926 24.0501C50.733 25.6021 37.82 30.4471 32.542 32.4001C32.207 32.5241 31.989 32.8461 32 33.1991C32.012 33.5531 32.25 33.8601 32.593 33.9631C34.96 34.6711 38.067 35.6561 38.067 35.6561C38.067 35.6561 39.519 40.0411 40.276 42.2711C40.371 42.5511 40.59 42.7711 40.879 42.8471C41.167 42.9221 41.475 42.8431 41.69 42.6401C42.906 41.4921 44.786 39.7171 44.786 39.7171C44.786 39.7171 48.358 42.3361 50.384 43.7791ZM39.374 35.1021L41.053 40.6401L41.426 37.1331C41.426 37.1331 47.913 31.2821 51.611 27.9471C51.719 27.8491 51.734 27.6851 51.644 27.5701C51.555 27.4551 51.391 27.4281 51.268 27.5061C46.982 30.2431 39.374 35.1021 39.374 35.1021Z" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="10" />
+                                <feGaussianBlur stdDeviation="10" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg class="social-media" width="88" height="88" viewBox="0 0 88 88"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                            <rect x="20" y="10" width="48" height="48" rx="24" fill="white" />
+                            <path
+                                d="M48.5 22H39.5C35.3585 22 32 25.3585 32 29.5V38.5C32 42.6415 35.3585 46 39.5 46H48.5C52.6415 46 56 42.6415 56 38.5V29.5C56 25.3585 52.6415 22 48.5 22ZM53.75 38.5C53.75 41.395 51.395 43.75 48.5 43.75H39.5C36.605 43.75 34.25 41.395 34.25 38.5V29.5C34.25 26.605 36.605 24.25 39.5 24.25H48.5C51.395 24.25 53.75 26.605 53.75 29.5V38.5Z" />
+                            <path
+                                d="M44 28C40.6865 28 38 30.6865 38 34C38 37.3135 40.6865 40 44 40C47.3135 40 50 37.3135 50 34C50 30.6865 47.3135 28 44 28ZM44 37.75C41.933 37.75 40.25 36.067 40.25 34C40.25 31.9315 41.933 30.25 44 30.25C46.067 30.25 47.75 31.9315 47.75 34C47.75 36.067 46.067 37.75 44 37.75Z" />
+                            <path
+                                d="M50.4494 28.3495C50.891 28.3495 51.2489 27.9915 51.2489 27.55C51.2489 27.1084 50.891 26.7505 50.4494 26.7505C50.0079 26.7505 49.6499 27.1084 49.6499 27.55C49.6499 27.9915 50.0079 28.3495 50.4494 28.3495Z" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="10" />
+                                <feGaussianBlur stdDeviation="10" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.4161 0 0 0 0 0.482057 0 0 0 0 0.57 0 0 0 0.05 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-inner container">
+            <div class="footer-inner__top">
+                <div class="top-1">
+                    <a href="#" class="top-left">
+                        <img src="./images/icon/logo.svg" alt="" class="logo-holder">
+
+                        <h3 class="logo-name">
+                            Sport Bolalar
+                            Nigohida
+                        </h3>
+                    </a>
+
+                    <p class="top1-text">
+                        Portalda eʼlon qilingan materiallardan nusxa koʻchirish, tarqatish va boshqa shakllarda
+                        foydalanish faqat tahririyat yozma roziligi bilan amalga oshirilishi mumkin.
+                    </p>
+                </div>
+
+                <div class="top-2">
+                    <h4 class="link-title">Bo‘limlar</h4>
+
+                    <a class="footer-link" href="taget_blank">O‘yinlar</a>
+                    <a class="footer-link" href="taget_blank">Infografika</a>
+                    <a class="footer-link" href="taget_blank">Ota-onalar uchun</a>
+                    <a class="footer-link" href="taget_blank">Videoblog</a>
+                    <a class="footer-link" href="taget_blank">Reyting</a>
+
+                </div>
+
+
+                <div class="top-3">
+                    <h4 class="link-title">O‘yin va sinovlar</h4>
+
+                    <a class="footer-link" href="taget_blank">10 bosqichdan iborat sport test</a>
+                    <a class="footer-link" href="taget_blank">O‘ylab toping</a>
+                    <a class="footer-link" href="taget_blank">Ha yoki yo‘q</a>
+                    <a class="footer-link" href="taget_blank">Sport lug‘ati</a>
+
+
+                </div>
+
+
+                <div class="top-4">
+                    <h4 class="link-title">Foydali sahifalar</h4>
+
+                    <a class="footer-link" href="taget_blank">Reyting</a>
+                    <a class="footer-link" href="taget_blank">Bog‘lanish</a>
+                    <a class="footer-link" href="taget_blank">F.A.Q</a>
+                    <a class="footer-link" href="taget_blank">Foydalanish shartlari</a>
+
+                </div>
+            </div>
+
+            <div class="footer-inner__bottom">
+                <p class="bottom1-text">
+                    Sport Bolalar Nigohida © 2020. Barcha huquqlar himoyalangan.
+                </p>
+
+                <img src="./images/footer-bottom-img.svg" alt="" class="bottom2-img">
+
+                <div class="footer3-icon">
+                    <a href="#" class="social-media">
+                        <img src="./images/icon/twitter.svg" alt="">
+                    </a>
+
+                    <a href="#" class="social-media">
+                        <img src="./images/icon/telegram.svg" alt="">
+                    </a>
+
+                    <a href="#" class="social-media">
+                        <img src="./images/icon/facebook.svg" alt="">
+                    </a>
+
+                    <a href="#" class="social-media">
+                        <img src="./images/icon/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="./scripts/main.js"></script>
 </body>
+
 </html>
